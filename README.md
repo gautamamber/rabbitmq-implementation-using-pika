@@ -1,6 +1,6 @@
-### RabbitMQ
+# RabbitMQ
 
-# RabbitMQ is used to send and recieve messages. It works on the principle of message broker and its mechanics.
+## RabbitMQ is used to send and recieve messages. It works on the principle of message broker and its mechanics.
 
 ## Terminologies in RabbitMQ
 
@@ -17,3 +17,7 @@ as to how many Producer can send a message to a queue. It  waits there until con
 RabbitMQ speaks multiple protocols. This tutorial uses AMQP 0-9-1, which is an open, general-purpose protocol for messaging.
 
 [Visit this link for more](https://www.rabbitmq.com/)
+
+## Sample response
+
+![Sample response](https://github.com/gautamamber/rabbitmq-implementation-using-pika/blob/master/sample_response.png)
