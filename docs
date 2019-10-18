@@ -13,3 +13,5 @@ so they get delivered to proper queues (mailboxes), from which consumers can gat
 
 5. Binding is a connection between queues and exchanges. Queues bound to a certain exchange are served by the exchange. How exactly depends on the exchange itself.
 
+
+RabbitMQ speaks multiple protocols. This tutorial uses AMQP 0-9-1, which is an open, general-purpose protocol for messaging.
