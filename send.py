@@ -1,5 +1,6 @@
 import pika
 
+# connect with rabbitMQ server
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
@@ -22,8 +23,11 @@ channel.queue_declare(queue= "Hello world")
 # it always needs to go through an exchange.
 
 channel.basic_publish(exchange= '',
-                        routing_key = "hello",
-                        body= "hello world")
+                      routing_key = "hello",
+                      body= "hello world")
                     
 print("[X] sent 'Hello world!' ")
+
+# close the connection
+
 connection.close()
