@@ -1,0 +1,15 @@
+RabbitMQ is used to send and recieve messages. It works on the principle of message broker and its mechanics.
+
+1. Producer: It is a party that sends messages hence creating message is producing.
+2. Consumer: Consumer is a party that recieve messages. hence recieving messages is consuming.
+3. Queue: It is a buffer in which sent messages are stored and ready to be recieve. There is no limitation to how many messages a single queue can hold. This is also nolimitation
+as to how many Producer can send a message to a queue. it  waits there until consumed by a Consumer
+accessing that particular queue. When a message hits  a non existing queue it get discarded.
+
+4. Exchange: It is an entity that resides down between producers and queues. The producer never sends a message directly to a queue. It sends messages to an 
+exchange, which - in turn - places the message to one or more queues, depending on the
+ exchange used. To use a real life metaphor, exchange is like a mailman: It handles messages
+so they get delivered to proper queues (mailboxes), from which consumers can gather them.
+
+5. Binding is a connection between queues and exchanges. Queues bound to a certain exchange are served by the exchange. How exactly depends on the exchange itself.
+
